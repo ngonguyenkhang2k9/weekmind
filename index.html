@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week Mind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="auth-gate" id="auth-gate">
+    <div class="auth-gate-shell">
+      <div class="auth-gate-copy">
+        <p class="eyebrow">Welcome to Week Mind</p>
+        <h1>Bắt đầu với một tài khoản riêng trước khi vào website.</h1>
+        <p class="hero-text">
+          Week Mind là nền tảng lập kế hoạch học tập và làm việc cá nhân hóa bằng AI.
+          Sau khi đăng nhập hoặc tạo tài khoản, bạn sẽ vào không gian riêng để lưu hồ sơ, khảo sát, phân tích và kế hoạch tuần của mình.
+        </p>
+        <div class="auth-gate-points">
+          <article class="glass-card mini-card">
+            <strong>Giới thiệu nhanh</strong>
+            <p>Xem sơ lược cách Week Mind thu thập dữ liệu, phân tích và tối ưu kế hoạch.</p>
+          </article>
+          <article class="glass-card mini-card">
+            <strong>Tài khoản riêng</strong>
+            <p>Mỗi tài khoản có hồ sơ, kế hoạch, nhật ký và tiến độ riêng trên trình duyệt này.</p>
+          </article>
+        </div>
+      </div>
+      <div class="glass-card auth-gate-card">
+        <div class="card-top">
+          <div>
+            <p class="card-kicker">Tài khoản</p>
+            <h3>Đăng nhập hoặc đăng ký</h3>
+          </div>
+          <span class="pill">Secure Access</span>
+        </div>
+        <form id="gate-auth-form" class="stack-form">
+          <label><span>Email</span><input type="email" id="gate-auth-email" placeholder="ban@weekmind.ai" required></label>
+          <label><span>Mật khẩu</span><input type="password" id="gate-auth-password" placeholder="Nhập mật khẩu" required></label>
+          <div class="auth-actions">
+            <button type="button" class="secondary-button" id="gate-login-button">Đăng nhập</button>
+            <button type="submit" class="primary-button">Tạo tài khoản</button>
+          </div>
+          <div id="gate-auth-message" class="auth-message">
+            Đăng nhập để mở website và kích hoạt không gian tài khoản cá nhân.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="topbar-hover-zone" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="topbar">
+      <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Mở menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="brand" href="#home">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>Week Mind</strong>
+          <small>AI Planning System</small>
+        </span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="#home">Trang chủ</a>
+        <a href="#survey">Khảo sát</a>
+        <a href="#analysis">Phân tích</a>
+        <a href="#planner">Kế hoạch</a>
+        <a href="#journal">Nhật ký</a>
+        <a href="#profile">Hồ sơ</a>
+      </nav>
+      <button class="ghost-button" id="topbar-cta" data-scroll="#workspace">Bắt đầu</button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Thiết kế tuần học tập và làm việc bằng AI</p>
+          <h1>Week Mind biến dữ liệu cá nhân thành lộ trình hành động rõ ràng.</h1>
+          <p class="hero-text">
+            Week Mind là nền tảng hỗ trợ lập kế hoạch học tập và làm việc thông minh bằng AI.
+            Website giúp bạn xây dựng lộ trình cá nhân hóa, theo dõi tiến độ và tối ưu hiệu suất mỗi ngày.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" data-scroll="#workspace">Tạo kế hoạch ngay</button>
+            <button class="secondary-button" data-scroll="#system">Xem 4 giai đoạn AI</button>
+          </div>
+          <div class="hero-metrics">
+            <article>
+              <strong>4 bước AI</strong>
+              <span>Thu thập, phân tích, lập kế hoạch, cải tiến</span>
+            </article>
+            <article>
+              <strong>Cá nhân hóa</strong>
+              <span>Kết hợp mục tiêu, thói quen, thời gian rảnh</span>
+            </article>
+            <article>
+              <strong>Theo dõi dài hạn</strong>
+              <span>Lưu lịch sử, tiến độ và phản hồi mỗi ngày</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-card-grid">
+          <article class="glass-card feature-card focus-card">
+            <div class="card-label">AI Snapshot</div>
+            <h2>Lịch tuần được tối ưu theo năng lượng và độ ưu tiên.</h2>
+            <ul>
+              <li>Khối deep work vào thời gian tập trung cao</li>
+              <li>Phân tách việc học, việc làm, kỹ năng mới</li>
+              <li>Điều chỉnh tự động theo nhật ký hằng ngày</li>
+            </ul>
+          </article>
+          <article class="glass-card mini-card">
+            <div class="card-label">Data Collection</div>
+            <strong>Khảo sát động</strong>
+            <p>AI tạo bộ câu hỏi phù hợp với mục tiêu và quỹ thời gian của bạn.</p>
+          </article>
+          <article class="glass-card mini-card">
+            <div class="card-label">Feasibility</div>
+            <strong>Đánh giá thực tế</strong>
+            <p>Phân tích mục tiêu, điều kiện hiện tại và mức độ khả thi ngắn hạn.</p>
+          </article>
+          <article class="glass-card mini-card accent-card">
+            <div class="card-label">Feedback Loop</div>
+            <strong>Tối ưu liên tục</strong>
+            <p>Dữ liệu hằng ngày quay lại phân tích để tuần sau chính xác hơn.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="system-section" id="system">
+        <div class="section-heading">
+          <p class="eyebrow">Hệ thống AI</p>
+          <h2>4 giai đoạn vận hành của Week Mind</h2>
+        </div>
+        <div class="timeline-grid">
+          <article class="timeline-card">
+            <span>01</span>
+            <h3>Thu thập dữ liệu</h3>
+            <p>Thu thập hồ sơ, mục tiêu và khảo sát cá nhân hóa.</p>
+          </article>
+          <article class="timeline-card">
+            <span>02</span>
+            <h3>Phân tích dữ liệu</h3>
+            <p>Phân tích thói quen, điểm mạnh và mức độ khả thi.</p>
+          </article>
+          <article class="timeline-card">
+            <span>03</span>
+            <h3>Lập kế hoạch</h3>
+            <p>Tạo kế hoạch tuần với task, thời gian và ưu tiên rõ ràng.</p>
+          </article>
+          <article class="timeline-card">
+            <span>04</span>
+            <h3>Cập nhật cải tiến</h3>
+            <p>Nhận phản hồi mỗi ngày và tự điều chỉnh kế hoạch.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="workspace" id="workspace">
+        <div class="section-heading compact">
+          <p class="eyebrow">Workspace</p>
+          <h2 id="workspace-title">Bảng điều khiển cá nhân</h2>
+        </div>
+        <div class="dashboard-grid">
+          <aside class="glass-card side-panel">
+            <div class="panel-block inline-auth-block">
+              <p class="panel-label">Tài khoản cá nhân</p>
+              <h3 id="auth-panel-title">Đăng nhập để bắt đầu</h3>
+              <p id="auth-panel-copy" class="hero-text">
+                Xem giới thiệu sơ lược về Week Mind trước, sau đó đăng nhập hoặc tạo tài khoản để mở khu vực cá nhân.
+              </p>
+              <form id="auth-form" class="stack-form auth-form">
+                <div class="field-grid">
+                  <label><span>Email</span><input type="email" id="auth-email" placeholder="ban@weekmind.ai" required></label>
+                  <label><span>Mật khẩu</span><input type="password" id="auth-password" placeholder="Nhập mật khẩu" required></label>
+                </div>
+                <div class="auth-actions">
+                  <button type="button" class="secondary-button" id="login-button">Đăng nhập</button>
+                  <button type="submit" class="primary-button">Tạo tài khoản</button>
+                </div>
+                <div class="auth-links">
+                  <button type="button" class="link-button" id="forgot-password-button">Quên mật khẩu?</button>
+                </div>
+                <div id="auth-message" class="auth-message">Dữ liệu được lưu riêng cho từng tài khoản trên trình duyệt này.</div>
+              </form>
+            </div>
+            <div class="panel-block account-summary">
+              <p class="panel-label">Tài khoản</p>
+              <h3 id="welcome-name">Xin chào, bạn mới</h3>
+              <p id="welcome-goal">Tạo hồ sơ để bắt đầu chu trình lập kế hoạch.</p>
+              <button type="button" class="secondary-button" id="logout-button" style="display: none;">Đăng xuất</button>
+            </div>
+            <div class="panel-block status-list">
+              <div><span>Khảo sát</span><strong id="survey-status">Chưa bắt đầu</strong></div>
+              <div><span>Phân tích AI</span><strong id="analysis-status">Chưa có dữ liệu</strong></div>
+              <div><span>Kế hoạch tuần</span><strong id="plan-status">Chưa tạo</strong></div>
+            </div>
+            <div class="panel-block progress-panel">
+              <div class="progress-header">
+                <span>Tiến độ tuần</span>
+                <strong id="completion-rate">0%</strong>
+              </div>
+              <div class="progress-bar"><div id="progress-fill"></div></div>
+            </div>
+          </aside>
+
+          <div class="workspace-main">
+            <section class="glass-card form-card" id="survey">
+              <div class="card-top">
+                <div>
+                  <p class="card-kicker">Giai đoạn 1</p>
+                  <h3>Khảo sát và thu thập dữ liệu</h3>
+                </div>
+                <span class="pill">Data Collection</span>
+              </div>
+              <form id="profile-form" class="stack-form">
+                <div class="field-grid">
+                  <label><span>Tên</span><input type="text" id="name" placeholder="Ví dụ: Minh Anh" required></label>
+                  <label><span>Tuổi</span><input type="number" id="age" min="10" max="99" placeholder="21" required></label>
+                </div>
+                <label><span>Mục tiêu chính</span><textarea id="goal" rows="3" placeholder="Ví dụ: đạt IELTS 7.0, nâng kỹ năng frontend, quản lý công việc tốt hơn" required></textarea></label>
+                <div class="field-grid">
+                  <label><span>Thời gian rảnh mỗi ngày</span><input type="text" id="freeTime" placeholder="Ví dụ: 3 tiếng buổi tối"></label>
+                  <label><span>Khung giờ ưu tiên</span><input type="text" id="focusTime" placeholder="Ví dụ: 6h-8h sáng"></label>
+                </div>
+                <label><span>Điểm mạnh / điểm yếu hiện tại</span><textarea id="strengthsWeaknesses" rows="3" placeholder="Ví dụ: tập trung tốt nhưng hay trì hoãn khi task quá lớn"></textarea></label>
+                <button type="submit" class="primary-button wide-button">Lưu hồ sơ và tạo khảo sát AI</button>
+              </form>
+              <div class="dynamic-questions">
+                <div class="card-top">
+                  <div>
+                    <p class="card-kicker">Câu hỏi AI</p>
+                    <h3>Khảo sát được cá nhân hóa</h3>
+                  </div>
+                </div>
+                <form id="survey-form" class="stack-form"></form>
+              </div>
+            </section>
+
+            <section class="glass-card analysis-card" id="analysis">
+              <div class="card-top">
+                <div>
+                  <p class="card-kicker">Giai đoạn 2</p>
+                  <h3>Phân tích dữ liệu</h3>
+                </div>
+                <span class="pill">Data Analysis</span>
+              </div>
+              <div id="analysis-content" class="empty-state">
+                Hoàn thành khảo sát để nhận phân tích về thói quen, mức độ khả thi và các điểm cần cải thiện.
+              </div>
+            </section>
+
+            <section class="glass-card planner-card" id="planner">
+              <div class="card-top">
+                <div>
+                  <p class="card-kicker">Giai đoạn 3</p>
+                  <h3>Kế hoạch học tập và làm việc</h3>
+                </div>
+                <span class="pill">Planning</span>
+              </div>
+              <div class="planner-actions">
+                <button id="generate-plan" class="primary-button">Tạo kế hoạch tuần</button>
+              </div>
+              <div id="plan-content" class="empty-state">
+                Chưa có kế hoạch. Hãy hoàn thành hồ sơ và phân tích trước khi tạo lịch tuần.
+              </div>
+            </section>
+
+            <section class="glass-card journal-card" id="journal">
+              <div class="card-top">
+                <div>
+                  <p class="card-kicker">Giai đoạn 4</p>
+                  <h3>Nhật ký hằng ngày và cải tiến</h3>
+                </div>
+                <span class="pill">Feedback Loop</span>
+              </div>
+              <form id="journal-form" class="stack-form">
+                <div class="field-grid">
+                  <label>
+                    <span>Thứ / ngày trong tuần</span>
+                    <select id="journal-day" required>
+                      <option value="Thứ 2">Thứ 2</option>
+                      <option value="Thứ 3">Thứ 3</option>
+                      <option value="Thứ 4">Thứ 4</option>
+                      <option value="Thứ 5">Thứ 5</option>
+                      <option value="Thứ 6">Thứ 6</option>
+                      <option value="Thứ 7">Thứ 7</option>
+                      <option value="Chủ nhật">Chủ nhật</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Mức hiệu quả</span>
+                    <select id="journal-efficiency">
+                      <option value="Cao">Cao</option>
+                      <option value="Trung bình">Trung bình</option>
+                      <option value="Thấp">Thấp</option>
+                    </select>
+                  </label>
+                </div>
+                <label><span>Hôm nay bạn đã làm gì?</span><textarea id="journal-done" rows="3" placeholder="Mô tả công việc hoặc buổi học đã hoàn thành" required></textarea></label>
+                <label>
+                  <span>Tình trạng hoàn thành</span>
+                  <select id="journal-status">
+                    <option value="Hoàn thành">Hoàn thành</option>
+                    <option value="Đang tiến hành">Đang tiến hành</option>
+                    <option value="Chưa hoàn thành">Chưa hoàn thành</option>
+                  </select>
+                </label>
+                <button type="submit" class="primary-button wide-button">Lưu nhật ký và cập nhật AI</button>
+              </form>
+              <div id="journal-list" class="journal-list empty-state">
+                Chưa có nhật ký nào được lưu.
+              </div>
+            </section>
+
+            <section class="glass-card profile-card" id="profile">
+              <div class="card-top">
+                <div>
+                  <p class="card-kicker">Hồ sơ cá nhân</p>
+                  <h3>Tài khoản, lịch sử và tiến độ</h3>
+                </div>
+                <span class="pill">Personal Space</span>
+              </div>
+              <div class="profile-actions">
+                <button type="button" class="secondary-button" id="clear-account-data-button">Xóa dữ liệu tài khoản</button>
+              </div>
+              <div id="profile-content" class="profile-content empty-state">
+                Tạo hồ sơ để xem lịch sử kế hoạch, thống kê tiến độ và phân tích AI theo thời gian.
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="forgot-password-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <h2>Quên mật khẩu</h2>
+      <form id="forgot-password-form" class="stack-form">
+        <label><span>Tên tài khoản (Email)</span><input type="email" id="forgot-email" placeholder="Nhập email tài khoản"></label>
+        <label><span>Tên thông tin</span><input type="text" id="forgot-name" placeholder="Nhập tên của bạn"></label>
+        <label><span>Tuổi</span><input type="number" id="forgot-age" min="10" max="99" placeholder="Nhập tuổi"></label>
+        <button type="submit" class="primary-button">Gửi yêu cầu khôi phục</button>
+      </form>
+      <div id="forgot-message" class="auth-message"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="overrides.js"></script>
+</body>
+</html>
